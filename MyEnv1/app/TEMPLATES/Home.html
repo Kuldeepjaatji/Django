@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/app/CSS/style.css">
+</head>
+<body>
+    <h1>{{data.name}}</h1>
+    <h1>{{data.marks}}</h1>
+    <img src="../static/image/images.jpeg" alt="image">
+    <hr>
+
+    <!-- <table border="1"> -->
+        <table>
+        <thead>
+            <tr>
+                <th>Sr.no.</th>
+                <th>Marks above 30</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for mark in data.marks %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{mark}}</td>
+                {% if mark >= 30 %}
+                <td>pass</td>
+                {% else%}
+                <td>fail</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
