@@ -1,0 +1,35 @@
+{%extends 'base.html'%}  
+
+{% block content %}
+<div class="container">
+    <div class="border border-1 border-danger p-4">
+        <h2 class="text-center mb-4">Student Admition From</h2>
+        <form id="form" method="post">
+
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" id="username" name="name">
+                <label for="username">student name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="email" name="email">
+                <label for="email">Email Address</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="password" name="age" >
+                <label for="password">Age</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="cpassword" name="number">
+                <label for="cpassword">Phone number</label>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</div>
+    
+    {% endblock%}
