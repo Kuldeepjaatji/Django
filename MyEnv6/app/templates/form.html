@@ -1,10 +1,13 @@
-from django import forms
+{% extends 'base.html'%}
+{% block content%}
 
-class MarksheetForm(forms.Form):
-    name = forms.CharField(max_length=100, label="Student Name")
-    roll_no = forms.IntegerField(label="Roll Number")
-    subject1 = forms.IntegerField(label="Subject 1 Marks")
-    subject2 = forms.IntegerField(label="Subject 2 Marks")
-    subject3 = forms.IntegerField(label="Subject 3 Marks")
-    subject4 = forms.IntegerField(label="Subject 4 Marks")
-    subject5 = forms.IntegerField(label="Subject 5 Marks")
+<h2>Result</h2>
+{% if result is None %}
+    <h4>Total: {{ total }}</h4>
+    <h4>Percentage: {{ parse }}%</h4>
+    <h4>Grade: {{ grade }}</h4>
+{% else %}
+    <h1>No result yet.</h1>
+{% endif %}
+<a href="/marksheet/">Go Back to Form</a>
+{% endblock content%}

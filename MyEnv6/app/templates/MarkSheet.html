@@ -87,10 +87,12 @@
     <div class="result" id="output"></div>
   </div>
 
-    {% if result is not None %}
-        <span> Result : {{context.grade}}</span>   
-        <span> Result : {{context.pasent}}</span>   
-    {% endif %}
+    {% comment %} {% if result is None %}
+        <h3>Result:</h3>
+        <span> Total : {{total}}</span>   
+        <span> Grade : {{grade}}</span>   
+        <span> Percentage: {{parsent}}</span>   
+    {% endif %} {% endcomment %}
  
 </body>
 </html>

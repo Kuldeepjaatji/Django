@@ -1,7 +1,7 @@
 from django.shortcuts import render , redirect
 from .models import student
 from django.db import IntegrityError
-from .Forms import MarksheetForm
+
 
 def home(req):
     return render(req,'Home.html')
@@ -51,9 +51,11 @@ def student_marksheet(req):
 
 
         context = {
+        'total' : total ,
         'grade' : grade,
-        'pasent' : parse,
+        'parse' : parse,
         }
-   
-    return render(req,'MarkSheet.html',{'context' : context})
+        return render(req,'form.html', context)
+    return render(req,'MarkSheet.html')
+
 
