@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Student Registration</h2>
+ {% comment %} <h1>{% if form.instance.pk %}Update Student{% else %}Add Student{% endif %}</h1> {% endcomment %}
+<form method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+{% comment %} <button type="submit" class="btn bg-danger">{% if form.instance.pk %}Update{% else %}Add{% endif %}</button> {% endcomment %}
+<button type="submit" class="btn bg-danger">Register</button>
+</form>
+
+{% endblock content %}
