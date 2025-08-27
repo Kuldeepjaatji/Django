@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="border border-1 border-danger p-4">
+        <h2 class="text-center mb-4">Login your id</h2>
+        <form id="form" method="POST">
+
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" id="email" name="email">
+                <label for="email">Email Address</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="password" name="password" >
+                <label for="password">password</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="cpassword" name="phone">
+                <label for="cpassword">Phone number</label>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}
