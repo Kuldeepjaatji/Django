@@ -2,6 +2,7 @@ from django.shortcuts import render , redirect , get_object_or_404
 from .models import student, login , StudentCorse
 from django.db import IntegrityError
 from .forms import StudentForm
+from django.contrib import messages
 
 
 def home(req):
@@ -124,7 +125,13 @@ def update_student(req,pk):
         return redirect('student_list')
     return render(req,'studentAdd.html',{'form':form})
 def delete_student(req,pk):
+    # try:
+    #     student = StudentCorse.objects.get(pk=pk)
+    #     student.delete()
+    #     messages.success(req, "Student deleted successfully.")
+    # except StudentCorse.DoesNotExist:
+    #     messages.warning(req, "Student not found.")
+    # return redirect('student_list')
     student = get_object_or_404(StudentCorse,pk=pk)
     student.delete()
-    students = StudentCorse.objects.all()
-    return render(req, 'student_list.html', {'students': students})
+    return redirect('student_list')
