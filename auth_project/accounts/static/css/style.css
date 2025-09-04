@@ -1,0 +1,218 @@
+/* Gradient Hero Section
+    .hero-section {
+      background: linear-gradient(to right, #3b82f6, #4f46e5);
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    .hero-section p {
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    .feature-card, .service-card, .testimonial-card {
+      transition: all 0.3s ease-in-out;
+    }
+    .feature-card:hover, .service-card:hover, .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    } */
+     .about-hero {
+      background: linear-gradient(to right, #3b82f6, #4f46e5), url("https://via.placeholder.com/1200x400") center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    .about-hero h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    .about-hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+    /* Team Cards */
+    .team-card {
+      transition: all 0.3s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    /* Counters */
+    .counter {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #3b82f6;
+    }
+    /* Progress bars */
+    .progress-bar {
+      background: linear-gradient(to right, #3b82f6, #4f46e5);
+    }
+
+     .page-header {
+      background: linear-gradient(to right, #2563eb, #4f46e5);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .page-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .page-header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    /* Service Card */
+    .service-card {
+      border: none;
+      border-radius: 15px;
+      padding: 40px 25px;
+      transition: all 0.3s ease-in-out;
+      background: white;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    .service-icon {
+      font-size: 3rem;
+      color: #2563eb;
+      margin-bottom: 20px;
+    }
+    .service-card h4 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .service-card p {
+      color: #6c757d;
+      font-size: 0.95rem;
+    }
+
+     body {
+      background: linear-gradient(135deg, #3b82f6, #4f46e5);
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+    }
+    .login-wrapper {
+      min-height: 100vh;
+    }
+    .login-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      padding: 40px;
+      color: #fff;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .login-card h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .form-control {
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .btn-custom {
+      background: #fff;
+      color: #4f46e5;
+      font-weight: bold;
+      border-radius: 12px;
+      padding: 12px;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background: #e5e7eb;
+      color: #3b82f6;
+    }
+    .input-group-text {
+      border-radius: 12px 0 0 12px;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      border: none;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border: 2px solid #3b82f6;
+    }
+    .extra-links {
+      margin-top: 15px;
+    }
+    .extra-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .extra-links a:hover {
+      color: #e5e7eb;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .contact-header {
+      background: linear-gradient(to right, #3b82f6, #4f46e5);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .contact-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 15px 35px rgba(0,0,0,0.15);
+    }
+    .form-control, .btn {
+      border-radius: 10px;
+    }
+    .map-container {
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    }
+
+    html, body { height: 100%; }
+    body { margin: 0; font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    /* Use dynamic viewport to avoid mobile 100vh bugs */
+    .auth-bg {
+      min-height: 100dvh;
+      background: var(--auth-grad);
+      display: grid;
+      place-items: center;
+      overflow-x: hidden;
+      padding: 24px; /* keeps card from touching edges on small screens */
+    }
+    .auth-card {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.18);
+    }
+    .form-control { border-radius: 12px; }
+    .btn-custom {
+      background: #2575fc; border: 0; border-radius: 12px; padding: 10px;
+      font-weight: 600; color: #fff; transition: .25s;
+    }
+    .btn-custom:hover { background: #1a5cd8; }
+    .messages p {
+      background: rgba(37,117,252,.12);
+      padding: 8px 12px; border-radius: 10px; font-size: 14px; margin: 8px 0 0;
+    }
